@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>BOLT Spatial Control Plane</title>
+<meta name="theme-color" content="#06080d">
+<script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+<style>
+body{margin:0;background:#06080d;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+#hud{position:fixed;z-index:4;left:20px;right:20px;top:18px;display:flex;justify-content:space-between;gap:16px;pointer-events:none}
+.badge{background:rgba(8,12,18,.76);border:1px solid #2d3748;border-radius:999px;padding:9px 12px;font-size:12px;backdrop-filter:blur(12px)}
+#fallback{position:fixed;z-index:3;inset:auto 20px 20px 20px;max-width:760px;background:rgba(8,12,18,.82);border:1px solid #2d3748;border-radius:18px;padding:16px;backdrop-filter:blur(14px)}
+#fallback h1{margin:0 0 8px;font-size:18px}#fallback p{margin:0;color:#b4c0d2;font-size:13px;line-height:1.45}
+</style>
+<script>
+AFRAME.registerComponent('approval-button',{
+ schema:{decision:{type:'string'}},
+ init:function(){
+   this.el.addEventListener('click',()=>window.BOLT_DECIDE(this.data.decision));
+   this.el.addEventListener('mouseenter',()=>this.el.setAttribute('scale','1.06 1.06 1.06'));
+   this.el.addEventListener('mouseleave',()=>this.el.setAttribute('scale','1 1 1'));
+ }
+});
+window.BOLT_EVENTS=[{t:new Date().toISOString(),event:'spatial control plane initialized'}];
+window.BOLT_LOG=function(event,meta={}){
+  window.BOLT_EVENTS.push({t:new Date().toISOString(),event,...meta});
+  const a=document.querySelector('#auditText');
+  if(a)a.setAttribute('value',window.BOLT_EVENTS.slice(-6).map(x=>x.event+(x.decision?' · '+x.decision:'')).join('\n'));
+};
+window.BOLT_DECIDE=function(decision){
+  const status=document.querySelector('#statusText');
+  const panel=document.querySelector('#actionPanel');
+  if(status)status.setAttribute('value',decision==='approved'?'APPROVED — execution authorized':'REJECTED — execution blocked');
+  if(panel)panel.setAttribute('color',decision==='approved'?'#133d2c':'#471c28');
+  window.BOLT_LOG('human decision',{decision});
+};
+</script>
+</head>
+<body>
+<div id="hud"><div class="badge">BOLT Spatial Control Plane · Meta VR Start 2026</div><div class="badge">Productivity · New Experience</div></div>
+<div id="fallback"><h1>Hands-first governed agent execution</h1><p>Enter VR from the headset browser. Point and pinch/select the APPROVE or REJECT controls. The consequential action remains blocked until an explicit human decision is recorded.</p></div>
+
+<a-scene background="color:#05070b" renderer="colorManagement:true;antialias:true" xr-mode-ui="XRMode:xr">
+  <a-assets></a-assets>
+  <a-entity light="type:ambient;intensity:.55;color:#d9e6ff"></a-entity>
+  <a-entity light="type:directional;intensity:.8;color:#ffffff" position="-1 3 2"></a-entity>
+
+  <a-entity position="0 1.55 -2.4">
+    <a-plane width="3.25" height="1.9" color="#0e141e" material="opacity:.96;roughness:.65" radius="0.08"></a-plane>
+    <a-text value="BOLT SPATIAL CONTROL PLANE" position="-1.38 .72 .02" width="2.8" color="#cfe1ff"></a-text>
+    <a-text value="AI proposes. Human authorizes." position="-1.38 .48 .02" width="2.65" color="#8190a6"></a-text>
+
+    <a-entity id="actionPanel">
+      <a-plane position="0 .03 .025" width="2.7" height=".72" color="#151e2b"></a-plane>
+      <a-text value="PROPOSED ACTION" position="-1.17 .25 .05" width="1.65" color="#7f91aa"></a-text>
+      <a-text value="Publish verified build to staging" position="-1.17 .02 .05" width="2.35" color="#ffffff"></a-text>
+      <a-text value="External side effect · approval required" position="-1.17 -.21 .05" width="2.3" color="#e8b55c"></a-text>
+    </a-entity>
+
+    <a-plane approval-button="decision:approved" class="clickable" position="-.68 -.58 .07" width="1.08" height=".34" color="#1e7a53"></a-plane>
+    <a-text value="APPROVE" position="-1.02 -.62 .09" width="1.05" color="#ffffff"></a-text>
+    <a-plane approval-button="decision:rejected" class="clickable" position=".68 -.58 .07" width="1.08" height=".34" color="#8d3447"></a-plane>
+    <a-text value="REJECT" position=".40 -.62 .09" width=".88" color="#ffffff"></a-text>
+  </a-entity>
+
+  <a-entity position="0 .52 -2.36">
+    <a-text id="statusText" value="PENDING — execution blocked" align="center" width="2.9" color="#efc471"></a-text>
+    <a-text id="auditText" value="control plane initialized" position="-1.4 -.22 0" width="2.8" color="#7e8da2"></a-text>
+  </a-entity>
+
+  <a-entity id="leftHand" hand-tracking-controls="hand:left;modelColor:#b7d1ff"></a-entity>
+  <a-entity id="rightHand" hand-tracking-controls="hand:right;modelColor:#b7d1ff"
+            raycaster="objects:.clickable;far:5" cursor="rayOrigin:entity;fuse:false"></a-entity>
+  <a-camera position="0 1.6 0"></a-camera>
+</a-scene>
+</body>
+</html>
