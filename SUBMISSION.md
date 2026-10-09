@@ -1,56 +1,32 @@
-# Meta VR Start Developer Competition 2026 — Submission Draft
+# Meta VR Start Developer Competition 2026 — Already Submitted
 
-## Project
-**BOLT Spatial Control Plane**
+**Devpost official submission confirmation received 6 October 2026; DO NOT submit again.**
 
-## Track
-Productivity
+- BOLT Spatial Control Plane, founder Omar Baró (Unfire, Spain; independent developer, pre-incorporation).
+- Productivity / New Experience / WebXR (A-Frame).
+- Public WebXR HTTPS demo: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/
+- Public MIT code: https://github.com/ondmindmanagement-hub/bolt-spatial-control-plane
+- Current contest entry: https://devpost.com/software/bolt-spatial-control-plane
+- Existing embedded contest video: https://www.youtube.com/watch?v=8mLCE7odHYM — titled BOLT META VR on the Unfire channel.
+- Deadline for editing original project: November 18 at 12:00 PST (21:00 Europe/Madrid CET).
 
-## Division
-New Experience
+## Actual demonstrated functionality
 
-## Special Award Target
-Best Agentic Interaction
+A standalone spatial simulation shows three hypothetical AI-agent proposals and lets a user approve or reject each in sequence, observe a local in-memory decision trail, progress with NEXT and start a fresh review with RESET. No deployment, external message, AI agent service or production action is executed by this prototype.
 
-## Build Path
-WebXR
+Hands-first behavior is designed via left and right A-Frame hand tracking and pinch-event selection of 3D buttons, but MUST be tested on actual Quest hardware or an official emulator to substantiate the controllerless end-to-end requirement.
 
-## Tagline
-A hands-first spatial approval room that keeps consequential AI-agent actions blocked until a human explicitly authorizes them.
+## Evidence and honest limitations
 
-## Short Description
-BOLT Spatial Control Plane is a new WebXR productivity experience for Meta VR. It turns an agent's proposed workflow into a spatial, hands-first approval room: the user can inspect a consequential action, approve or reject it with hand interaction, and see the resulting decision recorded in an audit trail. The core design separates AI reasoning from execution authority.
+- 6 Oct: Devpost submitted confirmation and Meta Start membership welcome emails received.
+- 10 Oct: User-facing three-stage workflow, NEXT/RESET, decision guards, local audit and completion state implemented. Node tests 10/10 pass; isolated Chrome desktop-browser test passed. Quest hand-gesture test PENDING.
+- The linked video is the original submitted video and has NOT been updated to display the 10 October change.
+- No commercial buyers, deployed productivity workflows, third-party Meta acceptance, production safety audit or customer savings claimed.
+- Reuse of the governed-review concept does not mean using the private BOLT Mac code here.
 
-## Problem
-Agentic systems are increasingly able to plan and execute multi-step workflows. In spatial and productivity environments, giving an agent unrestricted authority can make automation difficult to trust. Users need a clear boundary between what an agent recommends and what it is actually allowed to do.
+## Next checks, no calls or meetings
 
-## Solution
-BOLT Spatial Control Plane introduces a governed interaction layer between an AI agent and external actions. The agent proposes a visible plan; low-risk steps can remain bounded, while consequential actions are presented spatially and blocked until the user explicitly approves them. Rejection leaves the action unexecuted and records the decision.
-
-## Hands-first
-The immersive prototype is designed around WebXR hand tracking. The core approve/reject interaction does not require a controller.
-
-## Seated-first
-The approval surface sits directly in front of the user and is designed to be usable within a small stationary area.
-
-## What is new
-This is a new spatial experience created during the 2026 competition window. It is not a repackaged version of the existing BOLT desktop product. It applies the governed-execution concept to a hands-first WebXR interaction model with a newly built spatial interface.
-
-## Prototype
-https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/
-
-## Source
-https://github.com/ondmindmanagement-hub/bolt-spatial-control-plane
-
-## Current Demonstrated Flow
-1. Present a proposed consequential action.
-2. Keep execution in a pending/blocked state.
-3. Let the user approve or reject spatially.
-4. Record the explicit human decision.
-5. Surface the resulting approved or blocked state.
-
-## Safety / Authority Model
-`request → proposed plan → risk boundary → human approval → execution → audit`
-
-## Status
-Competition prototype under active development. Not a production deployment system.
+1. Test hand pinch/raycast actions, entering immersive VR and seated comfort on Meta hardware or official emulator.
+2. Record a genuine hands-first walkthrough without faces; update only the EXISTING Devpost entry and public video when truthful footage exists.
+3. Verify judging requirements and any future request for an actual device build vs WebXR URL before making a claim.
+4. No telephone, video meetings, Discord or in-person interactions. Do not sign terms, spend funds or make legal attestations for the founder.

@@ -1,0 +1,12 @@
+{
+  "name": "bolt-spatial-control-plane",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Standalone in-memory hands-first VR workflow review experiment",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
