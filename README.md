@@ -4,7 +4,7 @@
 
 BOLT Spatial Control Plane is a hands-first spatial review room prototype. A person can see proposed synthetic agent actions, review each one, explicitly approve or reject it, and advance through three steps. This is a standalone simulation in WebXR. There is no connected AI agent, no deployment, no email sending, and no external action can be triggered by approval.
 
-## New: official IWSDK preview (separate from submitted demo)
+## Current official competition experience: Meta IWSDK
 
 - [Watch actual 37-second Quest 3 IWER emulator recording](./iwsdk-preview/watch.html) — 13 pinch selections, no real Quest hardware tested.
 
@@ -12,7 +12,7 @@ BOLT Spatial Control Plane is a hands-first spatial review room prototype. A per
 - This is a separate **Meta Immersive Web SDK 1.0.1** build, retaining the same 3-case fictional review idea but using native IWSDK spatial UIKitML controls instead of manually wired A-Frame click logic.
 - **Verified on a Quest 3 IWER browser emulator:** hand-tracking enabled, both emulated hands delivered **13 pinch selections** through real spatial UI buttons in two 3-case workflows plus restart; 33 independent UI-state observations, all showing **0 external actions**. Includes eight offline checks and production bundle smoke tests.
 - Evidence: [IWER gesture test results](./iwsdk-preview/evidence/quest3-emulated-hands-2026-10-10.json).
-- **NOT tested on actual Quest hardware**, not independently reviewed, not yet the submitted Devpost link or demo video. The A-Frame app at the root is unchanged and remains the official entry URL for now. No real AI agent or external action.
+- **NOT tested on actual Quest hardware** or independently reviewed. The IWSDK preview and its 37-second Unfire YouTube demo are now the URLs in the verified original Devpost entry. The A-Frame app at the root remains a separate historical alternative. No real AI agent or external action.
 
 ## Features added on 10 October 2026
 
@@ -22,7 +22,7 @@ BOLT Spatial Control Plane is a hands-first spatial review room prototype. A per
 - Both-hand A-Frame hand-tracking-control entities with explicit pinchstarted selection handlers, designed for seated and controllerless use. **The pinch selection has not been tested on physical Meta hardware.**
 - Accessible desktop preview buttons for examination without VR hardware. Desktop tests are not proof of headset hand-gesture usability.
 
-## Technology
+## Original A-Frame prototype technology
 
 - Static HTML and A-Frame 1.7.1 WebXR. No API credentials, user accounts, backend or data collection.
 - index.html: 3D review room, VR controls and desktop fallback.
@@ -33,7 +33,9 @@ BOLT Spatial Control Plane is a hands-first spatial review room prototype. A per
 
 ## Run
 
-Public HTTPS app: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/
+Current official HTTPS app: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
+
+Original A-Frame alternative: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/
 
 Or locally:
 
@@ -48,7 +50,7 @@ Open http://localhost:8000 for desktop preview. For immersive mode use an approp
 - Offline Node checks: 10/10 passing.
 - Separate headless Chrome desktop-browser smoke test: three-step approve/reject flow, guarding out-of-order controls, completion and restart passed.
 - NOT verified: real Quest hand tracking, gesture ray direction, comfort/readability, performance or acceptance by Meta judges.
-- Existing Devpost entry embedded the earlier https://www.youtube.com/watch?v=8mLCE7odHYM video, titled BOLT META VR on the Unfire channel. It predates this three-step revision. Do NOT claim that video shows these new features.
+- The existing Devpost entry now embeds https://www.youtube.com/watch?v=2__3mL0cMa0 (37-second IWER hand-emulator evidence, publicly visible on Unfire). The older https://www.youtube.com/watch?v=8mLCE7odHYM is historical and no longer submitted.
 
 ## Competition
 

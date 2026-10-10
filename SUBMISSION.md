@@ -1,44 +1,44 @@
-# Meta VR Start Developer Competition 2026 — Already Submitted
+# Meta VR Start Developer Competition 2026 — Confirmed Submitted and Updated
 
-**Devpost official submission confirmation received 6 October 2026; DO NOT submit again.**
+**Status verified 10 October 2026:** Original entry was submitted on 6 October. Its existing Devpost listing was edited on 10 October; no duplicate project was submitted.
 
-- BOLT Spatial Control Plane, founder Omar Baró (Unfire, Spain; independent developer, pre-incorporation).
-- Productivity / New Experience / WebXR (A-Frame).
-- Public WebXR HTTPS demo: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/
-- Public MIT code: https://github.com/ondmindmanagement-hub/bolt-spatial-control-plane
-- Current contest entry: https://devpost.com/software/bolt-spatial-control-plane
-- Existing embedded contest video: https://www.youtube.com/watch?v=8mLCE7odHYM — titled BOLT META VR on the Unfire channel.
-- Deadline for editing original project: November 18 at 12:00 PST (21:00 Europe/Madrid CET).
+## Current official submission
+- Entry: https://devpost.com/software/bolt-spatial-control-plane
+- Public project name: **Spatial Review Room**
+- Public tagline: A seated, hands-first WebXR experience for three fictional decisions. No external actions.
+- Owner/participant: Omar Baró, individual, resident in Spain; company Unfire is a pre-incorporation initiative, not represented as an incorporated contestant.
+- Track: **Productivity**; division: **New Experience**; platform: **IWSDK (Web XR)**; original entrant form checked in signed-in Safari.
+- Official submitted application: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
+- Official public YouTube video: https://www.youtube.com/watch?v=2__3mL0cMa0
+- Public video host: **Unfire** (YouTube channel UCmNnou3gDLn9B6AVEJR7Pmg), 37 seconds, public not unlisted/private; YouTube external playability OK.
+- Public code and archived A-Frame prototype: https://github.com/ondmindmanagement-hub/bolt-spatial-control-plane
+- Devpost submission finalization UI: **SUBMITTED**, **5/5 steps done**, **Project submitted!**
+- Deadline: **18 November 2026 at 12:00 PST**, or 21:00 Madrid time.
+- Devpost now displays complete English project story, accurate summary, current IWSDK URL and current YouTube embed.
 
-## Actual demonstrated functionality
+## What the app actually does
+Meta IWSDK 1.0.1 seated XR UIKitML experience; three fictional cases, explicit APPROVE/REJECT choice, NEXT, and RESTART. Fully local deterministic in-memory review. No connected AI agent, email send, enterprise login, real human business approval, production write, account credentials, deployment, payout, or side effects.
 
-A standalone spatial simulation shows three hypothetical AI-agent proposals and lets a user approve or reject each in sequence, observe a local in-memory decision trail, progress with NEXT and start a fresh review with RESET. No deployment, external message, AI agent service or production action is executed by this prototype.
+## Verified evidence
+- 8/8 IWSDK offline state tests, TypeScript typecheck, production Vite build and public Chrome rendering/smoke test pass.
+- 13 actual **emulated** hand-pinch selections against spatial UI from Quest 3 IWER browser emulator; two complete 3-card flows plus restart, 33 read-only state observations, zero external actions.
+- Corrected 37-second H.264 video is composed of authentic IWER screenshot frames and explanatory English graphics, clearly marked emulator-only. A physical Quest device was **not** tested.
+- Public original A-Frame demo at repository root also still works; its 10/10 offline checks pass. Its earlier video https://www.youtube.com/watch?v=8mLCE7odHYM is historical only, NOT the currently submitted footage.
+- Removed promotional product-name overlays from contest-facing app scenes and video; repo and program affiliation remain attributable.
 
-Hands-first behavior is designed via left and right A-Frame hand tracking and pinch-event selection of 3D buttons, but MUST be tested on actual Quest hardware or an official emulator to substantiate the controllerless end-to-end requirement.
+## Rules and limitations
+- https://start-developer-competition-26.devpost.com/rules
+- Meta Start membership welcome and Devpost submission confirmation received 6 October.
+- The YouTube video is explicitly **Public** and under three minutes. No duplicate entry was made.
+- Physical Quest hardware performance, tracking reliability, comfort and independent organizer judging are UNVERIFIED. Submission confirmation is not proof of a prize or certification.
+- No new grants, cash, customer contracts or competition awards confirmed. No mandatory calls, video meetings, Discord participation or spend initiated.
 
-## Evidence and honest limitations
+## Legacy and source
+- Original A-Frame app: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/ — alternative prototype, NOT the primary Devpost submission URL now.
+- Official IWSDK current app: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
+- Current video: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/watch.html and YouTube https://www.youtube.com/watch?v=2__3mL0cMa0
+- Input proof: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/evidence/quest3-emulated-hands-2026-10-10.json
+- Local source/evidence: ~/Desktop/Unfire/Competitions/Meta_VR_Start_2026/bolt-spatial-iwsdk-lab/
+- Audit on Mac: ~/Desktop/Unfire/Competitions/Meta_VR_Start_2026/META_VR_FINAL_AUDIT_2026-10-10.md
 
-- 6 Oct: Devpost submitted confirmation and Meta Start membership welcome emails received.
-- 10 Oct: User-facing three-stage workflow, NEXT/RESET, decision guards, local audit and completion state implemented. Node tests 10/10 pass; isolated Chrome desktop-browser test passed. Quest hand-gesture test PENDING.
-- The linked video is the original submitted video and has NOT been updated to display the 10 October change.
-- No commercial buyers, deployed productivity workflows, third-party Meta acceptance, production safety audit or customer savings claimed.
-- Reuse of the governed-review concept does not mean using the private BOLT Mac code here.
-
-## Next checks, no calls or meetings
-
-1. Test hand pinch/raycast actions, entering immersive VR and seated comfort on Meta hardware or official emulator.
-2. Record a genuine hands-first walkthrough without faces; update only the EXISTING Devpost entry and public video when truthful footage exists.
-3. Verify judging requirements and any future request for an actual device build vs WebXR URL before making a claim.
-4. No telephone, video meetings, Discord or in-person interactions. Do not sign terms, spend funds or make legal attestations for the founder.
-
-## Separate IWSDK proof, not current submitted Devpost demo (10 October 2026)
-- Preview: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
-- Quest 3 IWER emulated-hand testing: 13 actual spatial UI pinch selections, both emulated hands, two completed three-case synthetic reviews, one restart, 33 UI observations, zero side effects.
-- This is not a physical Quest hardware test, and the existing Devpost video has NOT been updated to depict it.
-- Pending before editing the existing entry: authentic under-three-minute XR simulator or headset recording and final eligibility review. Do not file a duplicate submission.
-
-
-## New emulator video (NOT yet entered on Devpost)
-- 10 October: new 37-second emulated-hand video: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/watch.html
-- Video and JSON logs are grounded in actual Quest 3 IWER browser simulation; no real headset validated. Demo page and original A-Frame entry remain online.
-- The competition submission still has an older video; do not claim this is the official Devpost/YouTube video until explicitly updated. Need YouTube public/unlisted upload and contest-specific edit, with no duplicate.
+**Status: Submission update complete as of 10 October 2026; awaiting judging.**
