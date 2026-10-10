@@ -1,4 +1,4 @@
-# BOLT Spatial Control Plane — IWSDK preview (not current contest submission)
+# Spatial Review Room — IWSDK preview (not current contest submission)
 
 This is a separate, public build using **Meta Immersive Web SDK 1.0.1**. The original A-Frame demo remains at the repository root and is still the URL previously entered on Devpost.
 
