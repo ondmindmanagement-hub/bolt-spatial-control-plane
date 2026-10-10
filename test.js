@@ -63,6 +63,30 @@ test("restart constructs independent, empty state",function(){
 test("invalid or manipulated state rejected",function(){
   assert.throws(function(){core.inspect({index:99,decisions:[],events:[],completed:false});},/Invalid workflow state/);
 });
+test("tampered future decision is rejected by state validator",function(){
+  const s=core.createState();
+  s.decisions[2]="approved";
+  assert.throws(function(){core.inspect(s);},/future decision/);
+});
+test("forged completed flag without final review is rejected",function(){
+  let s=core.createState();
+  s=core.next(core.decide(s,"approved"));
+  s=core.next(core.decide(s,"approved"));
+  s.completed=true;
+  assert.throws(function(){core.inspect(s);},/impossible completion/);
+});
+test("invalid decision label cannot enter a review state",function(){
+  const s=core.createState();s.decisions[0]="auto-executed";
+  assert.throws(function(){core.inspect(s);},/unsupported decision/);
+});
+test("skipping review of previous stage is refused",function(){
+  const s=core.createState();s.index=1;
+  assert.throws(function(){core.inspect(s);},/skipped review/);
+});
+test("non-string audit events are invalid",function(){
+  const s=core.createState();s.events.push({approved:true});
+  assert.throws(function(){core.inspect(s);},/Invalid workflow state/);
+});
 test("all three proposals are explicitly hypothetical",function(){
   assert.deepEqual(core.STEPS.map(function(s){return s.id;}),["review","draft","publish"]);
   assert.match(core.STEPS[2].description,/Never actually deployed/);

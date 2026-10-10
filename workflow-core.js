@@ -37,10 +37,28 @@
   }
   function assertState(s) {
     if (!s || !Array.isArray(s.decisions) || s.decisions.length !== STEPS.length ||
-        !Array.isArray(s.events) || !Number.isInteger(s.index) ||
-        s.index < 0 || s.index >= STEPS.length ||
+        !Array.isArray(s.events) || !s.events.every(function (x) { return typeof x === "string"; }) ||
+        !Number.isInteger(s.index) || s.index < 0 || s.index >= STEPS.length ||
         typeof s.completed !== "boolean") {
       throw new Error("Invalid workflow state");
+    }
+    // Reject tampered or inconsistent in-memory snapshots. A future action
+    // cannot be pre-approved, and a completed workflow must have reviewed all steps.
+    for (let i = 0; i < STEPS.length; i++) {
+      const decision = s.decisions[i];
+      if (decision !== null && decision !== "approved" && decision !== "rejected") {
+        throw new Error("Invalid workflow state: unsupported decision");
+      }
+      if (i < s.index && decision === null) {
+        throw new Error("Invalid workflow state: skipped review");
+      }
+      if (i > s.index && decision !== null) {
+        throw new Error("Invalid workflow state: future decision");
+      }
+    }
+    if (s.completed && (s.index !== STEPS.length - 1 ||
+        s.decisions[s.index] === null)) {
+      throw new Error("Invalid workflow state: impossible completion");
     }
   }
   function decide(s, decision) {
