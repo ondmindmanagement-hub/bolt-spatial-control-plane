@@ -4,6 +4,14 @@
 
 BOLT Spatial Control Plane is a hands-first spatial review room prototype. A person can see proposed synthetic agent actions, review each one, explicitly approve or reject it, and advance through three steps. This is a standalone simulation in WebXR. There is no connected AI agent, no deployment, no email sending, and no external action can be triggered by approval.
 
+## New: official IWSDK preview (separate from submitted demo)
+
+- Preview URL: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
+- This is a separate **Meta Immersive Web SDK 1.0.1** build, retaining the same 3-case fictional review idea but using native IWSDK spatial UIKitML controls instead of manually wired A-Frame click logic.
+- **Verified on a Quest 3 IWER browser emulator:** hand-tracking enabled, both emulated hands delivered **13 pinch selections** through real spatial UI buttons in two 3-case workflows plus restart; 33 independent UI-state observations, all showing **0 external actions**. Includes eight offline checks and production bundle smoke tests.
+- Evidence: [IWER gesture test results](./iwsdk-preview/evidence/quest3-emulated-hands-2026-10-10.json).
+- **NOT tested on actual Quest hardware**, not independently reviewed, not yet the submitted Devpost link or demo video. The A-Frame app at the root is unchanged and remains the official entry URL for now. No real AI agent or external action.
+
 ## Features added on 10 October 2026
 
 - Complete **three-stage workflow**: review a synthetic status summary, review a draft email, and review a hypothetical staging publication.

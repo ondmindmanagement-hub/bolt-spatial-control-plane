@@ -1,0 +1,373 @@
+{
+  "environment": "IWSDK v1.0.1 / IWER Quest3 browser emulation",
+  "hand_tracking_feature": true,
+  "control_mode": "hand",
+  "real_hardware_test": false,
+  "external_actions_executed": 0,
+  "tests": "PASS",
+  "trace": [
+    {
+      "tag": "begin",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-approve-button",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-approve-button-right-0",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-approve-button-right-1",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 1,
+        "rejected": 0,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 1,
+        "rejected": 0,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-0",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 1,
+        "rejected": 0,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-1",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-reject-button",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-reject-button-left-0",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-left-0",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-approve-button",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-approve-button-right-0",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-approve-button-right-1",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 2,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 2,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-0",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 2,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-1",
+      "state": {
+        "stage": 3,
+        "completed": true,
+        "approved": 2,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-reset-button",
+      "state": {
+        "stage": 3,
+        "completed": true,
+        "approved": 2,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-reset-button-left-0",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-reject-button",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 0,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-reject-button-right-0",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 1,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 1,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-left-0",
+      "state": {
+        "stage": 1,
+        "completed": false,
+        "approved": 0,
+        "rejected": 1,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-left-1",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 0,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-approve-button",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 0,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-approve-button-left-0",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 2,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": "approved",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-0",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-reject-button",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-reject-button-left-0",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 1,
+        "decision": null,
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-reject-button-left-1",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 2,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "before-next-button",
+      "state": {
+        "stage": 3,
+        "completed": false,
+        "approved": 1,
+        "rejected": 2,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    },
+    {
+      "tag": "poll-next-button-right-0",
+      "state": {
+        "stage": 3,
+        "completed": true,
+        "approved": 1,
+        "rejected": 2,
+        "decision": "rejected",
+        "externalActions": 0
+      }
+    }
+  ]
+}
