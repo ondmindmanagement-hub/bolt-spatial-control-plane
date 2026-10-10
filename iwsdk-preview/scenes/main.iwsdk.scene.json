@@ -57,10 +57,10 @@
       "transform": {
         "position": [
           0,
-          1.55,
+          1.58,
           -1.8
         ],
-        "scale": 0.52
+        "scale": 0.26
       },
       "components": {
         "RayInteractable": {}

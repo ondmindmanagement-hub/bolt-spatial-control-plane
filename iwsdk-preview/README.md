@@ -16,3 +16,12 @@ This is a separate, public build using **Meta Immersive Web SDK 1.0.1**. The ori
 
 Internal evidence and separate source are saved on the authorized Mac at:
 `~/Desktop/Unfire/Competitions/Meta_VR_Start_2026/bolt-spatial-iwsdk-lab/`
+
+
+## Authentic Quest 3 IWER emulator video, 10 October 2026
+- 37-second, 1280x720 H.264 video made from 137 authentic IWER browser screenshots, not an animated recreation.
+- Player: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/watch.html
+- MP4: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/demo-quest3-emulated-2026-10-10.mp4
+- 13 recorded synthetic hand-pinch controls, two three-case flows, one restart, zero external actions.
+- No physical Quest test, no AI agent or actual external system operation, no YouTube upload, and no Devpost edit yet.
+- Recording is silent with English graphical annotations; those graphics disclose emulation.

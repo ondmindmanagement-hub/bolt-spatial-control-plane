@@ -36,3 +36,9 @@ Hands-first behavior is designed via left and right A-Frame hand tracking and pi
 - Quest 3 IWER emulated-hand testing: 13 actual spatial UI pinch selections, both emulated hands, two completed three-case synthetic reviews, one restart, 33 UI observations, zero side effects.
 - This is not a physical Quest hardware test, and the existing Devpost video has NOT been updated to depict it.
 - Pending before editing the existing entry: authentic under-three-minute XR simulator or headset recording and final eligibility review. Do not file a duplicate submission.
+
+
+## New emulator video (NOT yet entered on Devpost)
+- 10 October: new 37-second emulated-hand video: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/watch.html
+- Video and JSON logs are grounded in actual Quest 3 IWER browser simulation; no real headset validated. Demo page and original A-Frame entry remain online.
+- The competition submission still has an older video; do not claim this is the official Devpost/YouTube video until explicitly updated. Need YouTube public/unlisted upload and contest-specific edit, with no duplicate.

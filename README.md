@@ -6,6 +6,8 @@ BOLT Spatial Control Plane is a hands-first spatial review room prototype. A per
 
 ## New: official IWSDK preview (separate from submitted demo)
 
+- [Watch actual 37-second Quest 3 IWER emulator recording](./iwsdk-preview/watch.html) — 13 pinch selections, no real Quest hardware tested.
+
 - Preview URL: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
 - This is a separate **Meta Immersive Web SDK 1.0.1** build, retaining the same 3-case fictional review idea but using native IWSDK spatial UIKitML controls instead of manually wired A-Frame click logic.
 - **Verified on a Quest 3 IWER browser emulator:** hand-tracking enabled, both emulated hands delivered **13 pinch selections** through real spatial UI buttons in two 3-case workflows plus restart; 33 independent UI-state observations, all showing **0 external actions**. Includes eight offline checks and production bundle smoke tests.
