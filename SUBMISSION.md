@@ -30,3 +30,9 @@ Hands-first behavior is designed via left and right A-Frame hand tracking and pi
 2. Record a genuine hands-first walkthrough without faces; update only the EXISTING Devpost entry and public video when truthful footage exists.
 3. Verify judging requirements and any future request for an actual device build vs WebXR URL before making a claim.
 4. No telephone, video meetings, Discord or in-person interactions. Do not sign terms, spend funds or make legal attestations for the founder.
+
+## Separate IWSDK proof, not current submitted Devpost demo (10 October 2026)
+- Preview: https://ondmindmanagement-hub.github.io/bolt-spatial-control-plane/iwsdk-preview/
+- Quest 3 IWER emulated-hand testing: 13 actual spatial UI pinch selections, both emulated hands, two completed three-case synthetic reviews, one restart, 33 UI observations, zero side effects.
+- This is not a physical Quest hardware test, and the existing Devpost video has NOT been updated to depict it.
+- Pending before editing the existing entry: authentic under-three-minute XR simulator or headset recording and final eligibility review. Do not file a duplicate submission.
